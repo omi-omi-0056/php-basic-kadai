@@ -12,7 +12,7 @@
     function sort_2way($array, $order)
     {
       if ($order) {
-        echo '昇順にソートします';
+        echo '昇順にソートします<br>';
 
         sort($array);
 
@@ -22,7 +22,7 @@
       } else {
         echo '降順でソートします<br>';
 
-        sort($array);
+        rsort($array);
 
         foreach ($array as $ary) {
           echo $ary . '<br>';
